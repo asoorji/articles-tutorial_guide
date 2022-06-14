@@ -10,17 +10,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Demo Application',
         debugShowCheckedModeBanner: false,
-        home: const LikeButton());
+        home: const LoveThis());
   }
 }
 
-class LikeButton extends StatefulWidget {
-  const LikeButton({Key? key}) : super(key: key);
+class LoveThis extends StatefulWidget {
+  const LoveThis({Key? key}) : super(key: key);
   @override
-  State<LikeButton> createState() => _LikeButtonState();
+  State<LoveThis> createState() => _LoveThisState();
 }
 
-class _LikeButtonState extends State<LikeButton> {
+class _LoveThisState extends State<LoveThis> {
   int _count = 8;
   void decision() {
     if (_count == 8) {
@@ -68,9 +68,3 @@ class _LikeButtonState extends State<LikeButton> {
     );
   }
 }
-
-
-
-
-
-
